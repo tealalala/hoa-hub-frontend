@@ -1,9 +1,14 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './views/Home.vue';
+
+// Account - General
 import Signup from "./views/Signup.vue";
 import Login from "./views/Login.vue";
 import Logout from "./views/Logout.vue";
+
+// Homeowner Users
+import ArchitectureChange from "./views/Architecture-Change.vue";
 
 
 Vue.use(Router)
@@ -37,6 +42,11 @@ export default new Router({
       path: "/logout",
       name: "logout",
       component: Logout
+    },
+    {
+      path: "/architecture-change",
+      name: "architectureChange",
+      component: ArchitectureChange
     }
   ]
 })

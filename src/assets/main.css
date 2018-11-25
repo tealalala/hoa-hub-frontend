@@ -1,0 +1,8 @@
+/*
+
+Prevent Resizing
+
+*/
+textarea {
+  resize: none;
+}

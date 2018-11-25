@@ -30,9 +30,10 @@
                 Manage Your Home
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Architecture Change Request</a>
+                <a class="dropdown-item" href="/#/architecture-change">Architecture Change Request</a>
                 <a class="dropdown-item" href="#">Home Painting Restrictions</a>
                 <a class="dropdown-item" href="#">Maintenance Requests</a>
+                <a class="dropdown-item" href="#">Selling Your Home</a>
                 <a class="dropdown-item" href="#">Solar Panel Restrictions</a>
                 <a class="dropdown-item" href="#">Violations</a>
                 <div class="dropdown-divider"></div>
@@ -43,7 +44,7 @@
               <a class="nav-link" href="#">Messages (i)</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Account (i)</a>
+              <a class="nav-link" href="/#/accountinfo">Account (i)</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/#/signup">Signup</a>

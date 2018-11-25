@@ -1,6 +1,8 @@
 <template>
   <div class="home">
-    <h1>{{ message }}</h1>
+    <div class="container">
+      <h1>{{ message }}</h1>
+    </div>
   </div>
 </template>
 
