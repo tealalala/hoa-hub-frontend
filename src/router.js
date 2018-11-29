@@ -8,7 +8,8 @@ import Login from "./views/Login.vue";
 import Logout from "./views/Logout.vue";
 
 // Homeowner Users
-import ArchitectureChange from "./views/Architecture-Change.vue";
+import ArchitectureChangeIndex from "./views/Architecture-Change-Index.vue";
+import ArchitectureChangeCreate from "./views/Architecture-Change-Create.vue";
 
 
 Vue.use(Router)
@@ -44,9 +45,14 @@ export default new Router({
       component: Logout
     },
     {
-      path: "/architecture-change",
-      name: "architectureChange",
-      component: ArchitectureChange
+      path: "/architecture-change-index",
+      name: "architectureChangeIndex",
+      component: ArchitectureChangeIndex
+    },
+    {
+      path: "/architecture-change-create",
+      name: "architectureChangeCreate",
+      component: ArchitectureChangeCreate
     }
   ]
 })

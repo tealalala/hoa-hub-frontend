@@ -1,7 +1,7 @@
 <template>
-  <div class="home">
+  <div class="architectureChangeCreate">
     <div class="container">
-      <h1>Architecture Change Request</h1>
+      <h1>Create Architecture Change Request</h1>
 
       <!-- Request Form -->
       <form v-on:submit.prevent="submit()">
@@ -10,7 +10,8 @@
         </ul>
         <div class="form-group">
           <label>Property Address:</label>
-          <input type="text" class="form-control" v-model="action_by_address_users.property_address_id" placeholder="property address" readonly>
+          <!-- <input type="text" class="form-control" v-model="action_by_address_users.property_address_id" placeholder="property address" readonly> -->
+          <!-- <div v-model="action_by_address_users.property_address_id"></div> -->
         </div>
         <div class="form-group">
           <label>Date Proposed:</label>
@@ -24,6 +25,11 @@
         <input type="submit" class="btn btn-primary" value="Submit">
       </form>
 
+      <div class="application-status" v-for="action in action_by_address_users">
+        <p>property_address_id: {{ action.category }} test</p>
+        <p></p>
+      </div>
+
     </div>
   </div>
 </template>
@@ -32,6 +38,8 @@
 </style>
 
 <script>
+import axios from 'axios'
+
 export default {
   data: function() {
     return {
@@ -39,7 +47,12 @@ export default {
       errors: []
     };
   },
-  created: function() {},
+  created: function() {
+    axios.get('http://localhost:3000/api/action_by_address_users').then(function(response) {
+      console.log(response.data);
+      this.products = response.data;
+    }.bind(this))
+  },
   methods: {
     submit: function() {
       var params = {
