@@ -1,5 +1,5 @@
 <template>
-  <div class="architectureChangeCreate">
+  <div class="architectureCreate">
     <div class="container">
       <h1>Create Architecture Change Request</h1>
 

@@ -30,7 +30,7 @@
                 Manage Your Home
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/#/architecture-change-index">Architecture Change Request</a>
+                <a class="dropdown-item" href="/#/architecture-index">Architecture Change Request</a>
                 <a class="dropdown-item" href="#">Home Painting Restrictions</a>
                 <a class="dropdown-item" href="#">Maintenance Requests</a>
                 <a class="dropdown-item" href="#">Selling Your Home</a>

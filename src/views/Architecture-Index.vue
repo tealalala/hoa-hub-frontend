@@ -1,7 +1,9 @@
 <template>
-  <div class="architectureChangeIndex">
+  <div class="architectureIndex">
     <div class="container">
       <h1>Architecture Change Index</h1>
+
+      <button class="btn btn-primary create-request" v-on:click="createRequest()">Create a Request</button>
 
       <div v-for="action in action_by_address_users">
         <p>property_address_id: {{ action.category }} test</p>
@@ -50,6 +52,9 @@ export default {
         .catch(error => {
           this.errors = error.response.data.errors;
         });
+    },
+    createRequest: function() {
+      this.$router.push("/architecture-new");
     }
   },
   computed: {}
