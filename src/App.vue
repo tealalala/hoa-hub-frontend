@@ -32,10 +32,11 @@
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="/#/architecture-index">Architecture Change Request</a>
                 <a class="dropdown-item" href="#">Home Painting Restrictions</a>
-                <a class="dropdown-item" href="#">Maintenance Requests</a>
                 <a class="dropdown-item" href="#">Selling Your Home</a>
                 <a class="dropdown-item" href="#">Solar Panel Restrictions</a>
-                <a class="dropdown-item" href="#">Violations</a>
+                <a class="dropdown-item" href="/#/violations-index">Violations</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/#/votes-index">Voting</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Make a payment</a>
               </div>

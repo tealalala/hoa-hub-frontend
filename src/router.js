@@ -10,6 +10,8 @@ import Logout from "./views/Logout.vue";
 // Homeowner Users
 import ArchitectureIndex from "./views/Architecture-Index.vue";
 import ArchitectureNew from "./views/Architecture-New.vue";
+import ViolationsIndex from "./views/Violations-Index.vue";
+import VotesIndex from "./views/Votes-Index.vue";
 
 
 Vue.use(Router)
@@ -29,30 +31,12 @@ export default new Router({
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
     },
-    {
-      path: "/signup",
-      name: "signup",
-      component: Signup
-    },
-    {
-      path: "/login",
-      name: "login",
-      component: Login
-    },
-    {
-      path: "/logout",
-      name: "logout",
-      component: Logout
-    },
-    {
-      path: "/architecture-index",
-      name: "architectureIndex",
-      component: ArchitectureIndex
-    },
-    {
-      path: "/architecture-new",
-      name: "architectureNew",
-      component: ArchitectureNew
-    }
+    { path: "/signup", name: "signup", component: Signup },
+    { path: "/login", name: "login", component: Login },
+    { path: "/logout", name: "logout", component: Logout },
+    { path: "/architecture-index", name: "architectureIndex", component: ArchitectureIndex},
+    { path: "/architecture-new", name: "architectureNew", component: ArchitectureNew },
+    { path: "/violations-index", name: "violationsIndex", component: ViolationsIndex },
+    { path: "/votes-index", name: "votesIndex", component: VotesIndex },
   ]
 })

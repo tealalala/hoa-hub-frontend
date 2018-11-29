@@ -1,11 +1,11 @@
 <template>
-  <div class="architectureIndex">
+  <div class="votesIndex">
     <div class="container">
-      <h1>Architecture Change Index</h1>
+      <h1>Voting Index</h1>
 
       <button class="btn btn-primary create-request" v-on:click="createRequest()">Create a Request</button>
 
-      <div v-for="action in filterBy(action_by_address_users, true, 'is_architecture')">
+      <div v-for="action in filterBy(action_by_address_users, true, 'is_vote')">
         <p>property_address_id: {{ action.property_address_id }}</p>
         <p>category: {{ action.category }}</p>
         <p>description: {{ action.door }}</p>
@@ -44,6 +44,7 @@ export default {
         property_address_id: this.property_address_id,
         description: this.description,
         date_proposed: this.date_proposed,
+        is_architecture: true,
         status: false
       };
       axios
