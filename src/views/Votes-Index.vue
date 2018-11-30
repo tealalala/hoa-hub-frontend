@@ -5,9 +5,8 @@
 
       <button class="btn btn-primary create-request" v-on:click="createRequest()">Create a Request</button>
 
-      <div v-for="action in filterBy(action_by_address_users, true, 'is_vote')">
-        <p>property_address_id: {{ action.property_address_id }}</p>
-        <p>category: {{ action.category }}</p>
+      <div v-for="action in filterBy(action_by_address_users, !null, 'bylaw_id')">
+        <p>bylaw_id: {{ action.bylaw_id}}</p>
         <p>description: {{ action.door }}</p>
         <p>user_id: {{ action.user_id }}</p>
         <hr>
