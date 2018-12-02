@@ -19,10 +19,10 @@
                 <a class="dropdown-item" href="#">Budget</a>
                 <a class="dropdown-item" href="#">Bylaws</a>
                 <a class="dropdown-item" href="#">Community Map</a>
-                <a class="dropdown-item" href="#">Covenants, Conditions, and Restrictions (CC&Rs)</a>
+                <a class="dropdown-item" href="#">Covenants, Conditions, and Restrictions (CCRs)</a>
                 <a class="dropdown-item" href="#">Insurance</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Board of Director Candidate Nominations</a>
+                <a class="dropdown-item" href="#">Calendar</a>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -42,10 +42,23 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Messages (i)</a>
+              <a class="nav-link" href="/#/messages">Messages</a>
+              <!-- <img src="../src/assets/images/envelope.svg" width=20%> -->
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/#/accountinfo">Account (i)</a>
+            <li class="nav-item dropdown">
+              <!-- <a class="nav-link" href="/#/accountinfo">Account Info</a> -->
+              <!-- <img src="../src/assets/images/user-2.svg" width=20%> -->
+              <!-- <a class="nav-link" href="/#/accountinfo">Account (i)</a> -->
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Account (Icon)
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Profile</a>
+                <a class="dropdown-item" href="#">Settings</a>
+                <a class="dropdown-item" href="#"></a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Sign Out</a>
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/#/signup">Signup</a>
