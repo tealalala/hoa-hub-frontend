@@ -17,14 +17,26 @@
                 <a class="dropdown-item" href="#">Meet Your Association Management</a>
                 <a class="dropdown-item" href="#">Meet Your Board of Directors</a>
                 <a class="dropdown-item" href="#">Budget</a>
-                <a class="dropdown-item" href="#">Bylaws</a>
+                <a class="dropdown-item" href="/#/bylaws">Bylaws</a>
                 <a class="dropdown-item" href="#">Community Map</a>
-                <a class="dropdown-item" href="#">Covenants, Conditions, and Restrictions (CCRs)</a>
+                <a class="dropdown-item" href="/#/ccrs">Covenants, Conditions, and Restrictions (CCRs)</a>
                 <a class="dropdown-item" href="#">Insurance</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Calendar</a>
               </div>
             </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Action Required
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/#/vote-bylaws">Vote on Proposed Bylaws</a>
+                <a class="dropdown-item" href="/#/vote-ccrs">Vote on Proposed CCRS</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/#/votes-index">View All Proposals</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Make a payment</a>
+              </div>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Manage Your Home
@@ -35,8 +47,6 @@
                 <a class="dropdown-item" href="#">Selling Your Home</a>
                 <a class="dropdown-item" href="#">Solar Panel Restrictions</a>
                 <a class="dropdown-item" href="/#/violations-index">Violations</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/#/votes-index">Voting</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Make a payment</a>
               </div>
@@ -55,9 +65,8 @@
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#">Profile</a>
                 <a class="dropdown-item" href="#">Settings</a>
-                <a class="dropdown-item" href="#"></a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Sign Out</a>
+                <a class="dropdown-item" href="#">Log Out</a>
               </div>
             </li>
             <li class="nav-item">
@@ -65,9 +74,6 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/#/login">Login</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/#/logout">Logout</a>
             </li>
           </ul>
           <!-- <form class="form-inline my-2 my-lg-0">

@@ -10,6 +10,8 @@ import Logout from "./views/Logout.vue";
 // Homeowner Users
 import ArchitectureIndex from "./views/Architecture-Index.vue";
 import ArchitectureNew from "./views/Architecture-New.vue";
+import BylawsIndex from "./views/Bylaws.vue";
+import CCRSIndex from "./views/Ccrs.vue";
 import ViolationsIndex from "./views/Violations-Index.vue";
 import VotesIndex from "./views/Votes-Index.vue";
 
@@ -36,6 +38,8 @@ export default new Router({
     { path: "/logout", name: "logout", component: Logout },
     { path: "/architecture-index", name: "architectureIndex", component: ArchitectureIndex},
     { path: "/architecture-new", name: "architectureNew", component: ArchitectureNew },
+    { path: "/bylaws", name: "bylawsIndex", component: BylawsIndex },
+    { path: "/ccrs", name: "ccrsIndex", component: CCRSIndex },
     { path: "/violations-index", name: "violationsIndex", component: ViolationsIndex },
     { path: "/votes-index", name: "votesIndex", component: VotesIndex },
   ]
