@@ -2,6 +2,9 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './views/Home.vue';
 
+// All Users
+import Calendar from "./views/Calendar.vue";
+
 // Account - General
 import Signup from "./views/Signup.vue";
 import Login from "./views/Login.vue";
@@ -34,6 +37,7 @@ export default new Router({
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
     },
+    { path: "/calendar", name: "calendar", component: Calendar },
     { path: "/signup", name: "signup", component: Signup },
     { path: "/login", name: "login", component: Login },
     { path: "/logout", name: "logout", component: Logout },
