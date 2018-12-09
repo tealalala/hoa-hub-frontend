@@ -11,6 +11,7 @@
         <p>category: {{ action.category }}</p>
         <p>description: {{ action.door }}</p>
         <p>user_id: {{ action.user_id }}</p>
+        <p>date_open: {{ action.date_open }}</p>
         <hr>
       </div>
 

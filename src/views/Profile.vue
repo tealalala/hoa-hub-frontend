@@ -9,21 +9,21 @@
         </ul>
         <div class="form-group">
           <label>First Name:</label>
-          <input type="text" class="form-control" placeholder="test">
+          <input type="text" class="form-control" v-model:value="user.first_name">
         </div>
         <div class="form-group">
           <label>Middle Name:</label>
-          <input type="text" class="form-control">
+          <input type="text" class="form-control" v-model:value="user.middle_name">
         </div>
         <div class="form-group">
           <label>Last Name:</label>
-          <input type="text" class="form-control">
+          <input type="text" class="form-control" v-model:value="user.last_name">
         </div>
         <div class="form-group">
           <label>E-mail:</label>
-          <input type="text" class="form-control">
+          <input type="text" class="form-control" v-model:value="user.email">
         </div>
-        <input type="submit" class="btn btn-primary" value="Update My Profile" v-on:click="updateProfile()">
+        <input type="submit" class="btn btn-primary" value="Update My Profile" v-on:click="updateProfile(inputUpdate)">
       </form>
 
 
@@ -40,14 +40,15 @@ import axios from 'axios'
 export default {
   data: function() {
     return {
-      users: [],
+      user: [],
+      action_by_address_user: {},
       errors: []
     };
   },
   created: function() {
-    axios.get('http://localhost:3000/api/users').then(function(response) {
+    axios.get('http://localhost:3000/api/users/' + this.$route.params.id ).then(function(response) {
       console.log(response.data);
-      this.users = response.data;
+      this.user = response.data;
     }.bind(this))
   },
   methods: {
@@ -60,7 +61,7 @@ export default {
         email: inputUpdate.email
       };
       axios
-        .patch("http://localhost:3000/api/users/", params)
+        .patch("http://localhost:3000/api/users/" + this.$route.params.id + '/edit', params)
         .then(response => {
           console.log('update profile function clicked');
           console.log(params);
