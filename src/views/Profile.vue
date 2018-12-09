@@ -9,7 +9,7 @@
         </ul>
         <div class="form-group">
           <label>First Name:</label>
-          <input type="text" class="form-control" value="">
+          <input type="text" class="form-control" placeholder="test">
         </div>
         <div class="form-group">
           <label>Middle Name:</label>
