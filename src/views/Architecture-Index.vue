@@ -5,7 +5,8 @@
 
       <button class="btn btn-primary create-request" v-on:click="createRequest()">Create a Request</button>
 
-      <div v-for="action in filterBy(action_by_address_users, true, 'is_architecture')">
+      <!-- <div v-for="action in filterBy(filtered_architecture_is_true, true, 'is_architecture')"> -->
+      <div v-for="action in filtered_architecture_is_true">
         <p>property_address_id: {{ action.property_address_id }}</p>
         <p>category: {{ action.category }}</p>
         <p>description: {{ action.door }}</p>
@@ -28,14 +29,14 @@ export default {
   mixins: [Vue2Filters.mixin],
   data: function() {
     return {
-      action_by_address_users: {},
+      filtered_architecture_is_true: {},
       errors: []
     };
   },
   created: function() {
-    axios.get('http://localhost:3000/api/action_by_address_users').then(function(response) {
+    axios.get('http://localhost:3000/api/filtered_architecture_is_true').then(function(response) {
       console.log(response.data);
-      this.action_by_address_users = response.data;
+      this.filtered_architecture_is_true = response.data;
     }.bind(this))
   },
   methods: {
@@ -47,7 +48,7 @@ export default {
         status: false
       };
       axios
-        .get("http://localhost:3000/api/action_by_address_users", params)
+        .get("http://localhost:3000/api/filtered_architecture_is_true", params)
         .then(response => {
           console.log(response.data);
         })

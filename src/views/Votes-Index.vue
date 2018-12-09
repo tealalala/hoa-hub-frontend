@@ -3,7 +3,6 @@
     <div class="container">
       <h1>Voting Index</h1>
 
-      <!-- <div v-for="action in filterBy(action_by_address_users, true, 'is_vote')"> -->
       <div v-for="action in filtered_bylaws_is_false">
         <p>id: {{ action.id }}</p>
         <p>status: {{ action.status }}</p>
@@ -16,6 +15,8 @@
         <span class="button-space"><button class="btn btn-primary" v-on:click="voteDown(action)">Vote Down</button></span>
         <hr>
       </div>
+
+      <span class="button-space"><button class="btn btn-primary" v-on:click="fetchUser()">Fetch User</button></span>
 
     </div>
   </div>
@@ -35,6 +36,7 @@ export default {
   mixins: [Vue2Filters.mixin],
   data: function() {
     return {
+      user: [],
       filtered_bylaws_is_false: [],
       errors: []
     };
@@ -45,6 +47,17 @@ export default {
     }.bind(this))
   },
   methods: {
+    fetchUser: function() {
+      axios.get('http://localhost:3000/api/users')
+        .then(response => {
+          this.user = response.data;
+          console.log('user was fetched');
+        })
+        .catch(error => {
+          alert('Something went wrong');
+          console.error(error.response.data);
+        });
+    },
     voteUp: function(inputAction) {
       console.log(inputAction);
       var params = {
@@ -55,8 +68,8 @@ export default {
         is_architecture: false,
         is_violation: false,
         is_vote: true,
-        user_id: 6,
-        property_address_id: current_user.property_address_id,
+        user_id: inputAction.current_user.id,
+        property_address_id: inputAction.current_user.property_address_id,
         bylaw_id: inputAction.id,
         ccr_id: null,
       };
@@ -71,7 +84,7 @@ export default {
         })
         .catch(error => {
           console.log('catch function');
-          // console.log(errors.response);
+          console.log(errors.response);
           this.errors = errors.response.data.errors;
         })
         console.log("voteUp completed");
@@ -86,7 +99,7 @@ export default {
         is_architecture: false,
         is_violation: false,
         is_vote: false,
-        user_id: 6,
+        user_id: current_user.id,
         property_address_id: current_user.property_address_id,
         bylaw_id: inputAction.id,
         ccr_id: null,
@@ -102,7 +115,7 @@ export default {
         })
         .catch(error => {
           console.log('catch function');
-          // console.log(errors.response);
+          console.log(errors.response);
           this.errors = errors.response.data.errors;
         })
         console.log("voteDown completed");

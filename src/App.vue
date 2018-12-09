@@ -14,29 +14,18 @@
                 Association
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Meet Your Association Management</a>
+                <a class="dropdown-item" href="#">Meet Your Association Management Team</a>
                 <a class="dropdown-item" href="#">Meet Your Board of Directors</a>
                 <a class="dropdown-item" href="#">Budget</a>
                 <a class="dropdown-item" href="/#/bylaws">Bylaws</a>
                 <a class="dropdown-item" href="#">Community Map</a>
                 <a class="dropdown-item" href="/#/ccrs">Covenants, Conditions, and Restrictions (CCRs)</a>
                 <a class="dropdown-item" href="#">Insurance</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Calendar</a>
               </div>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Action Required
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/#/vote-bylaws">Vote on Proposed Bylaws</a>
-                <a class="dropdown-item" href="/#/vote-ccrs">Vote on Proposed CCRS</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/#/votes-index">View All Proposals</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Make a payment</a>
-              </div>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Calendar</a>
+            </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Manage Your Home
@@ -51,10 +40,23 @@
                 <a class="dropdown-item" href="#">Make a payment</a>
               </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/#/messages">Messages</a>
-              <!-- <img src="../src/assets/images/envelope.svg" width=20%> -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Messages
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/#/vote-bylaws">Vote on Proposed Bylaws</a>
+                <a class="dropdown-item" href="/#/vote-ccrs">Vote on Proposed CCRS</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/#/votes-index">View All Proposals</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Make a payment</a>
+              </div>
             </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="/#/messages">Messages</a> -->
+              <!-- <img src="../src/assets/images/envelope.svg" width=20%> -->
+            <!-- </li> -->
             <li class="nav-item dropdown">
               <!-- <a class="nav-link" href="/#/accountinfo">Account Info</a> -->
               <!-- <img src="../src/assets/images/user-2.svg" width=20%> -->
@@ -63,10 +65,10 @@
                 Account (Icon)
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Profile</a>
+                <a class="dropdown-item" href="/#/profile">Profile</a>
                 <a class="dropdown-item" href="#">Settings</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Log Out</a>
+                <a class="dropdown-item" href="/#/logout">Log Out</a>
               </div>
             </li>
             <li class="nav-item">
