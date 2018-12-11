@@ -2,36 +2,61 @@
   <div class="userProfile">
     <div class="container">
 
-      <form v-on:submit.prevent="submit()">
-        <h1>Your Profile</h1>
-        <ul>
-          <li class="text-danger" v-for="error in errors">{{ error }}</li>
-        </ul>
-        <div class="form-group">
-          <label>First Name:</label>
-          <input type="text" class="form-control" v-model:value="user.first_name">
-        </div>
-        <div class="form-group">
-          <label>Middle Name:</label>
-          <input type="text" class="form-control" v-model:value="user.middle_name">
-        </div>
-        <div class="form-group">
-          <label>Last Name:</label>
-          <input type="text" class="form-control" v-model:value="user.last_name">
-        </div>
-        <div class="form-group">
-          <label>E-mail:</label>
-          <input type="text" class="form-control" v-model:value="user.email">
-        </div>
-        <input type="submit" class="btn btn-primary" value="Update My Profile" v-on:click="updateProfile(inputUpdate)">
-      </form>
+      <h1>Your Profile</h1>
 
+      <div class="row">
+        <div class="col-sm-2">
+          <img src="../assets/images/elsie.jpg" class="img-profile">
+          <p class="center-this"><a href="">Upload a new photo</a></p>
+        </div>
+        <div class="col-sm-10">
+
+          <form v-on:submit.prevent="submit()">
+            <ul>
+              <li class="text-danger" v-for="error in errors">{{ error }}</li>
+            </ul>
+            <div class="form-group">
+              <label>First Name</label>
+              <input type="text" class="form-control" v-model:value="user.first_name">
+            </div>
+            <div class="form-group">
+              <label>Middle Name</label>
+              <input type="text" class="form-control" v-model:value="user.middle_name">
+            </div>
+            <div class="form-group">
+              <label>Last Name</label>
+              <input type="text" class="form-control" v-model:value="user.last_name">
+            </div>
+            <div class="form-group">
+              <label>E-mail</label>
+              <input type="text" class="form-control" v-model:value="user.email">
+            </div>
+            <input type="submit" class="btn btn-primary" value="Update My Profile" v-on:click="updateProfile(inputUpdate)">
+          </form>
+
+        </div>
+      </div>
 
     </div>
   </div>
 </template>
 
 <style>
+h1 {
+  padding-top: 25px;
+}
+
+.img-profile {
+  margin-top: 25px;
+}
+
+.center-this {
+  text-align: center;
+}
+
+label {
+  font-weight: bold;
+}
 </style>
 
 <script>
