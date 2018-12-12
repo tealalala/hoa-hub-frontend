@@ -14,8 +14,8 @@
                 Association
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/#/board">Meet Your Board of Directors</a>
                 <a class="dropdown-item" href="#">Meet Your Association Management Team</a>
-                <a class="dropdown-item" href="#">Meet Your Board of Directors</a>
                 <a class="dropdown-item" href="#">Budget</a>
                 <a class="dropdown-item" href="/#/bylaws">Bylaws</a>
                 <a class="dropdown-item" href="#">Community Map</a>
