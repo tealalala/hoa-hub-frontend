@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div id="nav">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-default fixed-top">
         <a class="navbar-brand" href="/#/">HOAHub</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -70,10 +70,10 @@
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="/#/logout">Log Out</a>
               </div>
-            </li>
+            <!-- </li>
             <li class="nav-item">
               <a class="nav-link" href="/#/signup">Signup</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="/#/login">Login</a>
             </li>
@@ -85,6 +85,8 @@
         </div>
       </nav>
     </div>
+    <!-- /div nav -->
+
     <router-view/>
   </div>
 </template>

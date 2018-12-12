@@ -7,51 +7,53 @@
       <!-- <hr class="my-4 hr-style" align="left"> -->
       <!-- <p>Take a moment to sign up today.</p> -->
       <p class="lead">
-        <a class="btn btn-primary btn-lg" href="/#/signup" role="button">Sign up</a>
+        <!-- <a class="btn btn-primary btn-lg" href="/#/signup" role="button">Sign up</a> -->
+        <form class="form-inline" role="form">
+          <div class="form-group">
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
+          </div>
+          <button type="submit" class="btn btn-warning btn-lg">Connect me!</button>
+        </form>
       </p>
     </div>
 
-    <div class="cards-container">
-      <!-- All the cards -->
-      <div class="row">
-        <div class="col-sm">
+    <div class="container">
+      <div class="row mt centered">
+        <div class="col-lg-4">
+          <img src="../assets/images/ser01.png" width="180" alt="">
+          <h4>1 - Browser Compatibility</h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+        </div>
+        <!--/col-lg-4 -->
 
-          <!-- First Card -->
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="#" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">Connect with your association</p>
-            </div>
-          </div>
+        <div class="col-lg-4">
+          <img src="../assets/images/ser02.png" width="180" alt="">
+          <h4>2 - Email Campaigns</h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
 
         </div>
-        <div class="col-sm">
+        <!--/col-lg-4 -->
 
-          <!-- Second Card -->
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="#" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">Make your vote count, every time</p>
-            </div>
-          </div>
+        <div class="col-lg-4">
+          <img src="../assets/images/ser03.png" width="180" alt="">
+          <h4>3 - Gather Your Notes</h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
 
         </div>
-        <div class="col-sm">
-          <!-- Third Card -->
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="#" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">Maintain the neighborhood standard</p>
-            </div>
-          </div>
-        </div>
-
+        <!--/col-lg-4 -->
       </div>
+      <!-- /row -->
     </div>
+    <!-- /container -->
+
 
     <!-- Footer -->
     <div class="footer">
-      this is the footer
+      <h5>HOAHub</h5>
+      <p class="footer-text">Careers</p>
+      <p class="footer-text">Press</p>
+      <p class="footer-text">Policies</p>
+      <p class="footer-text">Help</p>
     </div>
 
   </div>
@@ -68,8 +70,8 @@
 .bg {
   background: url('../assets/images/house.jpg') no-repeat center center;
   width: 100%;
-  height: 100vh;
-  background-size: 70%;
+  height: 90vh;
+  background-size: 60%;
   background-position: right;
 }
 
