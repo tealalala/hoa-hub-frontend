@@ -9,7 +9,9 @@
           <img src="../assets/images/elsie.jpg" class="img-profile">
           <p class="center-this"><a href="">Upload a new photo</a></p>
         </div>
-        <div class="col-sm-10">
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-9">
 
           <form v-on:submit.prevent="submit()">
             <ul>

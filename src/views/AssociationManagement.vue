@@ -1,8 +1,8 @@
 <template>
-  <div class="board">
+  <div class="associationManagement">
       <div class="container">
 
-        <h1>Meet Your Board of Directors</h1>
+        <h1>Meet Your Association Management Team</h1>
         <h5>Townsend Maple Homeowners Association</h5>
 
         <div class="div-spacer">
@@ -40,40 +40,20 @@
         <div class="row">
           <div class="col-sm-4">
             <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="../assets/images/elsie.jpg" alt="Card image cap">
+              <img class="card-img-top" src="../assets/images/graham-stark.jpg" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title">Elsie Chara</h5>
-                <p class="card-text">President</p>
+                <h5 class="card-title">Graham Stark</h5>
+                <p class="card-text">Community Association Manager</p>
                 <a href="#" class="btn btn-primary">Contact</a>
               </div>
             </div>
           </div>
           <div class="col-sm-4">
             <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="../assets/images/shelli-klein.jpg" alt="Card image cap">
+              <img class="card-img-top" src="../assets/images/alejandro-lesa.jpg" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title">Shelli Klein</h5>
-                <p class="card-text">Vice President</p>
-                <a href="#" class="btn btn-primary">Contact</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="../assets/images/tilda-boyer.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Tilda Boyer</h5>
-                <p class="card-text">Treasurer</p>
-                <a href="#" class="btn btn-primary">Contact</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="../assets/images/angel-ritchie.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Angel Ritchie</h5>
-                <p class="card-text">Director</p>
+                <h5 class="card-title">Alejandro Lesa</h5>
+                <p class="card-text">Community Association Manager</p>
                 <a href="#" class="btn btn-primary">Contact</a>
               </div>
             </div>

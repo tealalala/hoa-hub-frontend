@@ -5,6 +5,7 @@ import About from "./views/About.vue";
 
 // Association
 import Board from "./views/Board.vue";
+import AssociationManagement from "./views/AssociationManagement.vue";
 
 // All Users
 import Calendar from "./views/Calendar.vue";
@@ -31,6 +32,7 @@ export default new Router({
     { path: "/", name: "home", component: Home },
     { path: "/about", name: "about", component: About },
     { path: "/board", name: "board", component: Board },
+    { path: "/management", name: "associationManagement", component: AssociationManagement },
     { path: "/calendar", name: "calendar", component: Calendar },
     { path: "/signup", name: "signup", component: Signup },
     { path: "/login", name: "login", component: Login },

@@ -10,7 +10,7 @@
         <!-- <a class="btn btn-primary btn-lg" href="/#/signup" role="button">Sign up</a> -->
         <form class="form-inline" role="form">
           <div class="form-group">
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address" size="40%">
           </div>
           <button type="submit" class="btn btn-warning btn-lg">Connect me!</button>
         </form>
@@ -60,6 +60,11 @@
 </template>
 
 <style>
+#exampleInputEmail1 {
+  width: 100%;
+  margin-right: 20px;
+}
+
 .cards-container {
   margin: auto;
   width: 100%;
