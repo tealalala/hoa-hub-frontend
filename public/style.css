@@ -5,6 +5,10 @@
 * License: https://templatemag.com/license/
 */
 
+.container-fluid {
+  padding: 0 10% 0 10%;
+}
+
 body {
   background-color: #f2f2f2;
   font-family: 'Lato', sans-serif;
@@ -84,6 +88,7 @@ hr {
   margin: 1em 0;
   padding: 0;
 }
+
 
 .navbar-default {
   background-color: #f8f5e6;

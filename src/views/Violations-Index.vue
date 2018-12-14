@@ -1,7 +1,7 @@
 <template>
   <div class="violationsIndex">
-    <div class="container">
-      <h1>Violations Index</h1>
+    <div class="container-fluid">
+      <h1>Violations</h1>
 
       <!-- <div v-for="action in filterBy(action_by_address_users, true, 'is_violation')"> -->
       <!-- <div v-for="action in filtered_violations_is_true">
@@ -14,16 +14,12 @@
         <tr bgcolor=#eee>
           <th width="30%">Violation Category</th>
           <th width="50%">Description</th>
-          <th width="10%">Status</th>
-          <th width="10%">Resolved?</th>
           <th width="10%">Action</th>
         </tr>
         <tr v-for="action in filtered_violations_is_true">
           <td>{{ action.category }}</td>
           <td>{{ action.description }}</td>
-          <td>{{ action.is_violation }}</td>
-          <td>{{ action.status }}</td>
-          <td><a href="#" class="btn btn-danger">Resolve this Violation</a></td>
+          <td><a href="#" class="btn btn-danger" v-on:click="">Resolve this Violation</a></td>
         </tr>
       </table>
 

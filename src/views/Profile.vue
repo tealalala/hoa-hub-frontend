@@ -1,17 +1,17 @@
 <template>
   <div class="userProfile">
-    <div class="container">
+    <div class="container-fluid">
 
       <h1>Your Profile</h1>
 
       <div class="row">
         <div class="col-sm-2">
-          <img src="../assets/images/elsie.jpg" class="img-profile">
+          <img src="../assets/images/elsie.jpg" class="img-profile rounded-circle">
           <p class="center-this"><a href="">Upload a new photo</a></p>
         </div>
-        <div class="col-sm-1">
-        </div>
-        <div class="col-sm-9">
+        <!-- <div class="col-sm-1">
+        </div> -->
+        <div class="col-sm-10">
 
           <form v-on:submit.prevent="submit()">
             <ul>
