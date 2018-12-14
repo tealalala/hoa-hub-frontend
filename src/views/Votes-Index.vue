@@ -34,8 +34,8 @@
             <td>{{ action.section }}</td>
             <td>{{ action.description }}</td>
             <td>{{ action.date_proposed }}</td>
-            <td><a href="#" class="btn btn-danger" data-toggle="modal" data-target="#resolveViolationModal"  v-on:click="voteUp(action)">Vote in Favor</a></td>
-            <td><a href="#" class="btn btn-danger" data-toggle="modal" data-target="#resolveViolationModal"  v-on:click="voteDown(action)">Vote Against</a></td>
+            <td><a href="#" class="btn btn-danger" data-toggle="modal" data-target="#resolveViolationModal" v-on:click="voteUp(action)">Vote in Favor</a></td>
+            <td><a href="#" class="btn btn-danger" data-toggle="modal" data-target="#resolveViolationModal" v-on:click="voteDown(action)" v-if="">Vote Against</a></td>
           </tr>
         </tbody>
       </table>
@@ -103,15 +103,20 @@ export default {
         .post("http://localhost:3000/api/action_by_address_users/", params)
         .then(response => {
           console.log('voteUp function clicked');
-          console.log(params);
-          console.log(response.data);
-          this.action_by_address_user.push(response.data);
+          // console.log(params);
+          // console.log(response.data);
+          // this.action_by_address_user.push(response.data);
+          // console.log('adding the action');
+          // console.log(inputAction);
+          var index = this.filtered_bylaws_is_false.indexOf(inputAction);
+          this.filtered_bylaws_is_false.splice(index, 1);
           this.errors = [];
         })
         .catch(error => {
           console.log('catch function');
-          console.log(errors.response);
-          this.errors = errors.response.data.errors;
+          console.log(error);
+          console.log(error.response);
+          // this.errors = error.response.data.errors;
         })
         console.log("voteUp completed");
     },
@@ -136,7 +141,8 @@ export default {
           console.log('voteDown function clicked');
           console.log(params);
           console.log(response.data);
-          this.action_by_address_user.push(response.data);
+          var index = this.filtered_bylaws_is_false.indexOf(inputAction);
+          this.filtered_bylaws_is_false.splice(index, 1);
           this.errors = [];
         })
         .catch(error => {
