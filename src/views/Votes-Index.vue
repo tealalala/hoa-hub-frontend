@@ -1,20 +1,46 @@
 <template>
   <div class="votesIndex">
-    <div class="container">
+    <div class="container-fluid">
       <h1>Voting Index</h1>
 
-      <div v-for="action in filtered_bylaws_is_false">
-        <p>id: {{ action.id }}</p>
-        <p>status: {{ action.status }}</p>
-        <p>section: {{ action.section }}</p>
-        <p>description: {{ action.description }}</p>
-        <p>date_proposed: {{ action.date_proposed }}</p>
-        <p>association_mgmt_id: {{ action.association_management_id }}</p>
+      <table width="100%" border=1 cellpadding=10 cellspacing=10>
+        <thead bgcolor=#eee>
+          <th width="5%" scope="col" style="text-align: left; width: 10rem;">
+            ID
+          </th>
+          <th width="5%" scope="col" style="text-align: left; width: 10rem;">
+            Status
+          </th>
+          <th width="5%" scope="col" style="text-align: left; width: 10rem;">
+            Section
+          </th>
+          <th width="55%" scope="col" style="text-align: left; width: 10rem;">
+            Description
+          </th>
+          <th width="10%" scope="col" style="text-align: left; width: 10rem;">
+            Date Proposed
+          </th>
+          <th width="10%" scope="col" style="text-align: left; width: 10rem;">
+            Vote in favor
+          </th>
+          <th width="10%" scope="col" style="text-align: left; width: 10rem;">
+            Vote against
+          </th>
+        </thead>
+        <tbody>
+          <tr v-for="action in filtered_bylaws_is_false">
+            <td>{{ action.id }}</td>
+            <td>{{ action.status }}</td>
+            <td>{{ action.section }}</td>
+            <td>{{ action.description }}</td>
+            <td>{{ action.date_proposed }}</td>
+            <td><a href="#" class="btn btn-danger" data-toggle="modal" data-target="#resolveViolationModal"  v-on:click="voteUp(action)">Vote in Favor</a></td>
+            <td><a href="#" class="btn btn-danger" data-toggle="modal" data-target="#resolveViolationModal"  v-on:click="voteDown(action)">Vote Against</a></td>
+          </tr>
+        </tbody>
+      </table>
 
-        <span class="button-space"><button class="btn btn-primary" v-on:click="voteUp(action)">Vote Up</button></span>
-        <span class="button-space"><button class="btn btn-primary" v-on:click="voteDown(action)">Vote Down</button></span>
-        <hr>
-      </div>
+      <p></p>
 
       <span class="button-space"><button class="btn btn-primary" v-on:click="fetchUser()">Fetch User</button></span>
 
@@ -63,13 +89,13 @@ export default {
       var params = {
         category: inputAction.section,
         description: inputAction.description,
-        status: null,
+        status: true,
         date_open: inputAction.date_proposed,
         is_architecture: false,
         is_violation: false,
         is_vote: true,
-        user_id: inputAction.current_user.id,
-        property_address_id: inputAction.current_user.property_address_id,
+        // user_id: inputAction.current_user.id,
+        // property_address_id: inputAction.current_user.property_address_id,
         bylaw_id: inputAction.id,
         ccr_id: null,
       };
@@ -94,13 +120,13 @@ export default {
       var params = {
         category: inputAction.section,
         description: inputAction.description,
-        status: null,
+        status: false,
         date_open: inputAction.date_proposed,
         is_architecture: false,
         is_violation: false,
-        is_vote: false,
-        user_id: current_user.id,
-        property_address_id: current_user.property_address_id,
+        is_vote: true,
+        // user_id: current_user.id,
+        // property_address_id: current_user.property_address_id,
         bylaw_id: inputAction.id,
         ccr_id: null,
       };

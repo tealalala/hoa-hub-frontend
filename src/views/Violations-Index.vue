@@ -10,28 +10,51 @@
         <hr>
       </div> -->
 
+      <!-- Table begin -->
       <table width="100%" border=1 cellpadding=10 cellspacing=10>
-        <tr bgcolor=#eee>
-          <th width="30%">Violation Category</th>
-          <th width="50%">Description</th>
-          <th width="10%">Action</th>
-        </tr>
-        <tr v-for="action in filtered_violations_is_true">
-          <td>{{ action.category }}</td>
-          <td>{{ action.description }}</td>
-          <td><a href="#" class="btn btn-danger" v-on:click="">Resolve this Violation</a></td>
-        </tr>
+        <thead bgcolor=#eee>
+          <th width="30%" scope="col" style="text-align: left; width: 10rem;">
+            Violation Category
+          </th>
+          <th width="60%" scope="col" style="text-align: left; width: 10rem;">
+            Description
+          </th>
+          <th width="10%" scope="col" style="text-align: left; width: 10rem;">
+            Action Required
+          </th>
+        </thead>
+        <tbody>
+          <tr v-for="action in filtered_violations_is_true">
+            <td>{{ action.category }}</td>
+            <td>{{ action.description }}</td>
+            <td><a href="#" class="btn btn-danger" data-toggle="modal" data-target="#resolveViolationModal" v-on:click="setCurrentViolation(inputViolation)">Resolve this Violation</a></td>
+          </tr>
+        </tbody>
       </table>
+      <!-- /Table end -->
 
-
-      <!-- <div class="w-auto p-3" v-for="action in filtered_violations_is_true">
-        <div class="card-body">
-          <h5 class="card-title">{{ action.category }} Violation</h5>
-          <p class="card-text">Description: {{ action.description }}</p>
-          <a href="#" class="btn btn-danger">Resolve this Violation</a>
-          <hr>
+      <!-- Modal Window to Resolve Violations -->
+      <div class="modal" tabindex="-1" role="dialog" id="resolveViolationModal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Send message to the Board & Association</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>{{ currentViolation.category }}</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
         </div>
-      </div> -->
+      </div>
+
+
 
     </div>
   </div>
@@ -44,15 +67,20 @@ table {
 </style>
 
 <script>
-import axios from 'axios'
-import Vue2Filters from 'vue2-filters'
+import axios from 'axios';
+import Vue2Filters from 'vue2-filters';
+import SortedTablePlugin from "vue-sorted-table";
 
 export default {
   mixins: [Vue2Filters.mixin],
   data: function() {
     return {
       filtered_violations_is_true: [],
-      errors: []
+      errors: [],
+      currentViolation: {
+        category: "",
+        description: ""
+      }
     };
   },
   created: function() {
@@ -61,7 +89,12 @@ export default {
       this.filtered_violations_is_true = response.data;
     }.bind(this))
   },
-  methods: {},
+  methods: {
+    setCurrentViolation: function(inputViolation) {
+      console.log(inputRecipe);
+      this.currentViolation = inputViolation;
+    }
+  },
   computed: {}
 };
 </script>
