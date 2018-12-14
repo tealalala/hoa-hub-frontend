@@ -2,7 +2,10 @@ import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
 import axios from "axios";
+import SortedTablePlugin from "vue-sorted-table";
 
+
+// Login
 var jwt = localStorage.getItem("jwt");
 if (jwt) {
   axios.defaults.headers.common["Authorization"] = "Bearer " + jwt;
@@ -15,6 +18,8 @@ new Vue({
   render: h => h(App)
 }).$mount('#app')
 
+// Vue-sortable-table plug-in
+Vue.use(SortedTablePlugin);
 
 // Smooth Scroll
 jQuery(document).ready(function( $ ) {
