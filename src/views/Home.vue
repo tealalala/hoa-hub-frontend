@@ -14,6 +14,7 @@
           </div>
           <button type="submit" class="btn btn-warning btn-lg">Connect me!</button>
         </form>
+        <p>If you can have an account, <a href="/Login">log in</a>.</p>
       </p>
     </div>
 

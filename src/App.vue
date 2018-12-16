@@ -45,10 +45,10 @@
                 Messages
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/#/vote-bylaws">Vote on Proposed Bylaws</a>
+                <!-- <a class="dropdown-item" href="/#/vote-bylaws">Vote on Proposed Bylaws</a>
                 <a class="dropdown-item" href="/#/vote-ccrs">Vote on Proposed CCRS</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/#/votes-index">View All Proposals</a>
+                <div class="dropdown-divider"></div> -->
+                <a class="dropdown-item" href="/#/votes-index">Vote on Proposed Bylaws & CCRS</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Make a payment</a>
               </div>
@@ -70,13 +70,13 @@
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="/#/logout">Log Out</a>
               </div>
-            <!-- </li>
-            <li class="nav-item">
+            </li>
+            <!-- <li class="nav-item">
               <a class="nav-link" href="/#/signup">Signup</a>
             </li> -->
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="/#/login">Login</a>
-            </li>
+            </li> -->
           </ul>
           <!-- <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">

@@ -1,7 +1,7 @@
 <template>
   <div class="votesIndex">
     <div class="container-fluid">
-      <h1>Voting Index</h1>
+      <h1>Vote</h1>
 
       <table width="100%" border=1 cellpadding=10 cellspacing=10>
         <thead bgcolor=#eee>

@@ -5,7 +5,7 @@ import axios from "axios";
 import SortedTablePlugin from "vue-sorted-table";
 
 
-// Login
+// Login JWT
 var jwt = localStorage.getItem("jwt");
 if (jwt) {
   axios.defaults.headers.common["Authorization"] = "Bearer " + jwt;
@@ -13,6 +13,7 @@ if (jwt) {
 
 Vue.config.productionTip = false
 
+// Vuejs App Render
 new Vue({
   router,
   render: h => h(App)
