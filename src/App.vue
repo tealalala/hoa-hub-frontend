@@ -18,7 +18,7 @@
                 <a class="dropdown-item" href="/#/management">Meet Your Association Management Team</a>
                 <a class="dropdown-item" href="#">Budget</a>
                 <a class="dropdown-item" href="/#/bylaws">Bylaws</a>
-                <a class="dropdown-item" href="#">Community Map</a>
+                <a class="dropdown-item" href="/#/community-map">Community Map</a>
                 <a class="dropdown-item" href="/#/ccrs">Covenants, Conditions, and Restrictions (CCRs)</a>
                 <a class="dropdown-item" href="#">Insurance</a>
               </div>
@@ -31,9 +31,9 @@
                 Manage Your Home
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/#/architecture-index">Architecture Change Request</a>
+                <a class="dropdown-item" href="/#/architecture-index">Architectural Request</a>
                 <a class="dropdown-item" href="/#/home-paint">Home Painting Restrictions</a>
-                <a class="dropdown-item" href="#">Selling Your Home</a>
+                <a class="dropdown-item" href="/#/selling-your-home">Selling Your Home</a>
                 <a class="dropdown-item" href="#">Solar Panel Restrictions</a>
                 <a class="dropdown-item" href="/#/violations-index">Violations</a>
                 <div class="dropdown-divider"></div>

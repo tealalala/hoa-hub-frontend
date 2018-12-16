@@ -1,7 +1,7 @@
 <template>
   <div class="architectureCreate">
     <div class="container">
-      <h1>Submit an Architecture Change Request</h1>
+      <h1>Submit an Architectural Request</h1>
 
       <!-- Request Form -->
       <form v-on:submit.prevent="submit()">

@@ -1,7 +1,7 @@
 <template>
   <div class="architectureIndex">
     <div class="container">
-      <h1>Architecture Change Request</h1>
+      <h1>Architectural Request</h1>
 
 
       <div class="alert alert-danger" role="alert">

@@ -4,11 +4,11 @@
       <h1>Home Paint Restrictions</h1>
 
       <div class="alert alert-secondary" role="alert">
-        Please submit an <a href="/#/architecture-index">Architecture Change Request</a> online and await for the Board's approval prior to painting your home. Once approved, please base the paint off Pantone.
+        Please submit an <a href="/#/architecture-index">Architecture Change Request</a> online and await for the Board's approval prior to painting your home. Once approved, please base the paint off the Pantone color scheme.
       </div>
 
       <div class="alert alert-warning" role="alert">
-        You cannot paint your home outside of the association's home paint color scheme unless it is on this approved list.
+        You cannot paint your home outside of the association's home paint color scheme unless it is on this approved list. Below is the approved list.
       </div>
 
       <div class="row">
