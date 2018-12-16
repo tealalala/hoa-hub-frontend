@@ -1,7 +1,7 @@
 <template>
   <div class="architectureCreate">
     <div class="container">
-      <h1>Create Architecture Change Request</h1>
+      <h1>Submit an Architecture Change Request</h1>
 
       <!-- Request Form -->
       <form v-on:submit.prevent="submit()">
@@ -9,16 +9,16 @@
           <li class="text-danger" v-for="error in errors">{{ error }}</li>
         </ul>
         <div class="form-group">
-          <label>Property Address:</label>
+          <label>Property Address</label>
           <input type="text" class="form-control" v-model="newArchitecture.property_address_id">
           <!-- <div v-model="action_by_address_users.property_address_id"></div> -->
         </div>
         <div class="form-group">
-          <label>Date Proposed:</label>
+          <label>Date Proposed</label>
           <input type="text" class="form-control" v-model="newArchitecture.date_proposed">
         </div>
         <div class="form-group">
-          <label>Description:</label>
+          <label>Description</label>
           <!-- <input type="text" class="form-control" v-model="description"> -->
           <textarea class="form-control" rows="3" v-model="newArchitecture.description"></textarea>
         </div>
