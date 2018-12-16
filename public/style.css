@@ -9,6 +9,10 @@
   padding: 0 10% 0 10%;
 }
 
+.list-inline{display:block;}
+.list-inline li{display:inline-block;}
+.list-inline li:before{content:'•'; margin:0 10px;}
+
 body {
   background-color: #f2f2f2;
   font-family: 'Lato', sans-serif;

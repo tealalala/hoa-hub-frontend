@@ -1,7 +1,48 @@
 <template>
   <div class="votesIndex">
-    <div class="container-fluid">
-      <h1>Vote</h1>
+    <div class="container">
+      <h1>Vote on Proposed Bylaws & CCRS</h1>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 100%;">
+              <div class="card-body">
+                <h5 class="card-title">Bylaws</h5>
+                <h6 class="card-subtitle mb-2 text-muted">The Association's Governing Rules</h6>
+                <p class="card-text">
+                  <ul class="list-inline">
+                    <li>determines how the association is run</li>
+                    <li>board of directors are elected members who follow the association's bylaws</li>
+                    <li>governs how often meetings are held, conducted, board offices, membership voting rights</li>
+                    <li>new bylaws may be proposed by the Board of Directors</li>
+                  </ul>
+                </p>
+                <a href="/#/bylaws" class="card-link">View the Bylaws</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 100%;">
+              <div class="card-body">
+                <h5 class="card-title">CC&Rs</h5>
+                <h6 class="card-subtitle mb-2 text-muted">The Community's Standards</h6>
+                <p class="card-text">
+                  <ul class="list-inline">
+                    <li>stands for Covenants, Conditions, and Restrictions</li>
+                    <li>a legal document that lays out the guidelines for the planned community</li>
+                    <li>are recorded in the county records and legally binding</li>
+                    <li>govern what homeowners can, can't or must do with respect to your home</li>
+                  </ul>
+                </p>
+                <a href="/#/ccrs" class="card-link">View the CC&Rs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
 
       <table width="100%" border=1 cellpadding=10 cellspacing=10>
         <thead bgcolor=#eee>
@@ -42,7 +83,7 @@
 
       <p></p>
 
-      <span class="button-space"><button class="btn btn-primary" v-on:click="fetchUser()">Fetch User</button></span>
+      <!-- <span class="button-space"><button class="btn btn-primary" v-on:click="fetchUser()">Fetch User</button></span> -->
 
     </div>
   </div>
@@ -73,16 +114,16 @@ export default {
     }.bind(this))
   },
   methods: {
-    fetchUser: function() {
-      axios.get('http://localhost:3000/api/users')
-        .then(response => {
-          this.user = response.data;
-          console.log('user was fetched');
-        })
-        .catch(error => {
-          alert('Something went wrong');
-          console.error(error.response.data);
-        });
+    // fetchUser: function() {
+    //   axios.get('http://localhost:3000/api/users')
+    //     .then(response => {
+    //       this.user = response.data;
+    //       console.log('user was fetched');
+    //     })
+    //     .catch(error => {
+    //       alert('Something went wrong');
+    //       console.error(error.response.data);
+    //     });
     },
     voteUp: function(inputAction) {
       console.log(inputAction);
@@ -151,7 +192,6 @@ export default {
           this.errors = errors.response.data.errors;
         })
         console.log("voteDown completed");
-    },
   }
 };
 </script>
