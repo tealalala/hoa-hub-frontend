@@ -29,30 +29,26 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Manage Your Home
+                <span class="new badge">12</span>
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/#/architecture-index">Architectural Request</a>
+                <a class="dropdown-item" href="/#/architecture-index">Architectural Request
+                  <span class="new badge">2</span>
+                </a>
                 <a class="dropdown-item" href="/#/home-paint">Home Painting Restrictions</a>
                 <a class="dropdown-item" href="/#/selling-your-home">Selling Your Home</a>
                 <a class="dropdown-item" href="#">Solar Panel Restrictions</a>
-                <a class="dropdown-item" href="/#/violations-index">Violations</a>
+                <a class="dropdown-item" href="/#/violations-index">Violations
+                  <span class="new badge">2</span>
+                </a>
+                <a class="dropdown-item" href="/#/votes-index">Vote on Proposed Bylaws & CCRS
+                  <span class="new badge">10</span>
+                </a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="/#/payment">Make a payment</a>
               </div>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Messages
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <!-- <a class="dropdown-item" href="/#/vote-bylaws">Vote on Proposed Bylaws</a>
-                <a class="dropdown-item" href="/#/vote-ccrs">Vote on Proposed CCRS</a>
-                <div class="dropdown-divider"></div> -->
-                <a class="dropdown-item" href="/#/votes-index">Vote on Proposed Bylaws & CCRS</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Make a payment</a>
-              </div>
-            </li>
+
             <!-- <li class="nav-item">
               <a class="nav-link" href="/#/messages">Messages</a> -->
               <!-- <img src="../src/assets/images/envelope.svg" width=20%> -->

@@ -9,7 +9,7 @@
             <h3>$500 / year</h3>
             <p>total for 2019</p>
           </div>
-          <p>This is your association fee for the entire year. Subject to change dependent on the following year's <a href="/#/budget">budget</a> needs.</p>
+          <p>This is your association fee for the entire year. Subject to change dependent on the next year's <a href="/#/budget">budget</a> needs.</p>
         </div>
         <div class="col-sm-7">
           <form>
