@@ -32,7 +32,7 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="/#/architecture-index">Architecture Change Request</a>
-                <a class="dropdown-item" href="#">Home Painting Restrictions</a>
+                <a class="dropdown-item" href="/#/home-paint">Home Painting Restrictions</a>
                 <a class="dropdown-item" href="#">Selling Your Home</a>
                 <a class="dropdown-item" href="#">Solar Panel Restrictions</a>
                 <a class="dropdown-item" href="/#/violations-index">Violations</a>
@@ -62,7 +62,7 @@
               <!-- <img src="../src/assets/images/user-2.svg" width=20%> -->
               <!-- <a class="nav-link" href="/#/accountinfo">Account (i)</a> -->
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Account (Icon)
+                Account
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="/#/profile">Profile</a>
