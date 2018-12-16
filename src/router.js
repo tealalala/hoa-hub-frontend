@@ -24,6 +24,7 @@ import ArchitectureNew from "./views/Architecture-New.vue";
 import BylawsIndex from "./views/Bylaws.vue";
 import CCRSIndex from "./views/Ccrs.vue";
 import HomePaint from "./views/HomePaint.vue";
+import Payment from "./views/Payment.vue";
 import SellingYourHome from "./views/SellingYourHome.vue";
 import UserProfile from "./views/Profile.vue";
 import ViolationsIndex from "./views/Violations-Index.vue";
@@ -48,6 +49,7 @@ export default new Router({
     { path: "/bylaws", name: "bylawsIndex", component: BylawsIndex },
     { path: "/ccrs", name: "ccrsIndex", component: CCRSIndex },
     { path: "/home-paint", name: "homePaint", component: HomePaint },
+    { path: "/payment", name: "payment", component: Payment },
     { path: "/selling-your-home", name: "sellingYourHome", component: SellingYourHome },
     { path: "/profile", name: "userProfile", component: UserProfile },
     { path: "/violations-index", name: "violationsIndex", component: ViolationsIndex },

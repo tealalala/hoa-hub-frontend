@@ -37,7 +37,7 @@
                 <a class="dropdown-item" href="#">Solar Panel Restrictions</a>
                 <a class="dropdown-item" href="/#/violations-index">Violations</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Make a payment</a>
+                <a class="dropdown-item" href="/#/payment">Make a payment</a>
               </div>
             </li>
             <li class="nav-item dropdown">
