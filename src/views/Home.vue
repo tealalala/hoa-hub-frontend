@@ -14,30 +14,30 @@
           </div>
           <button type="submit" class="btn btn-warning btn-lg">Connect me!</button>
         </form>
-        <p>If you can have an account, <a href="/#/login">log in</a>.</p>
+        <p>If you can have an account, please <a href="/#/login">login here</a>.</p>
       </p>
     </div>
 
     <div class="container">
       <div class="row mt centered">
         <div class="col-lg-4">
-          <img src="../assets/images/ser01.png" width="180" alt="">
-          <h4>1 - Browser Compatibility</h4>
+          <img src="../assets/images/hub-serv-01.png" width="180" alt="">
+          <h4>Engage with your association</h4>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
         </div>
         <!--/col-lg-4 -->
 
         <div class="col-lg-4">
-          <img src="../assets/images/ser02.png" width="180" alt="">
-          <h4>2 - Email Campaigns</h4>
+          <img src="../assets/images/hub-serv-02.png" width="180" alt="">
+          <h4>Get approval for home requests</h4>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
 
         </div>
         <!--/col-lg-4 -->
 
         <div class="col-lg-4">
-          <img src="../assets/images/ser03.png" width="180" alt="">
-          <h4>3 - Gather Your Notes</h4>
+          <img src="../assets/images/hub-serv-03.png" width="180" alt="">
+          <h4>Monitor your HOA fees</h4>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
 
         </div>
