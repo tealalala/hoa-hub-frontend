@@ -1,6 +1,6 @@
 <template>
   <div class="violationsIndex">
-    <div class="container-fluid">
+    <div class="container">
       <h1>Violations</h1>
 
       <!-- <div v-for="action in filterBy(action_by_address_users, true, 'is_violation')"> -->
@@ -9,6 +9,10 @@
         <p>status: {{ action.status }} test</p>
         <hr>
       </div> -->
+
+      <div class="alert alert-danger" role="alert">
+        Violations occur when the homeowner does not adhere to the <a href="/#/ccrs">Covenants, Conditions, and Restrictions</a>. Please resolve violations as soon as you are able.
+      </div>
 
       <!-- Table begin -->
       <table width="100%" border=1 cellpadding=10 cellspacing=10>
