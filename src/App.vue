@@ -29,9 +29,10 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Manage Your Home
-                <span class="new badge">12</span>
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/#/report-card">Home Report Card</a>
+                <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="/#/architecture-index">Architectural Request
                   <span class="new badge">2</span>
                 </a>
@@ -48,15 +49,7 @@
                 <a class="dropdown-item" href="/#/payment">Make a payment</a>
               </div>
             </li>
-
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="/#/messages">Messages</a> -->
-              <!-- <img src="../src/assets/images/envelope.svg" width=20%> -->
-            <!-- </li> -->
             <li class="nav-item dropdown">
-              <!-- <a class="nav-link" href="/#/accountinfo">Account Info</a> -->
-              <!-- <img src="../src/assets/images/user-2.svg" width=20%> -->
-              <!-- <a class="nav-link" href="/#/accountinfo">Account (i)</a> -->
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Account
               </a>
@@ -67,12 +60,6 @@
                 <a class="dropdown-item" href="/#/logout">Log Out</a>
               </div>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="/#/signup">Signup</a>
-            </li> -->
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="/#/login">Login</a>
-            </li> -->
           </ul>
           <!-- <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
