@@ -42,6 +42,16 @@
             <div class="card" style="width: 18rem;">
               <img class="card-img-top" src="../assets/images/graham-stark.jpg" alt="Card image cap">
               <div class="card-body">
+                <h5 class="card-title">Wendy Lee</h5>
+                <p class="card-text">Director of Escrow Services</p>
+                <a href="#" class="btn btn-primary">Contact</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="../assets/images/graham-stark.jpg" alt="Card image cap">
+              <div class="card-body">
                 <h5 class="card-title">Graham Stark</h5>
                 <p class="card-text">Community Association Manager</p>
                 <a href="#" class="btn btn-primary">Contact</a>
