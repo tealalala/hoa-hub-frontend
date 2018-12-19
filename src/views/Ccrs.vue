@@ -3,7 +3,7 @@
     <div class="container">
       <h1>CCRS Index</h1>
 
-      <div v-for="ccr in filterBy(ccrs, true, 'status')">
+      <div v-for="ccr in filtered_ccrs_is_true">
         <p>section: {{ ccr.section }}</p>
         <p>description: {{ ccr.door }}</p>
         <p>status: {{ ccr.status }}</p>
@@ -25,14 +25,14 @@ import axios from 'axios'
 export default {
   data: function() {
     return {
-      ccrs: {},
+      filtered_ccrs_is_true: {},
       errors: []
     };
   },
   created: function() {
-    axios.get('http://localhost:3000/api/ccrs').then(function(response) {
+    axios.get('http://localhost:3000/api/filtered_ccrs_is_true').then(function(response) {
       console.log(response.data);
-      this.ccrs = response.data;
+      this.filtered_ccrs_is_true = response.data;
     }.bind(this))
   },
   methods: {},

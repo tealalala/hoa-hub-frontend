@@ -12,7 +12,7 @@
       </div>
 
       <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm">
           <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="../assets/images/paint-model-a.jpg" alt="Card image cap">
             <div class="card-body">
@@ -21,7 +21,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm">
           <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="../assets/images/paint-model-b.jpg" alt="Card image cap">
             <div class="card-body">
@@ -30,7 +30,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm">
           <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="../assets/images/paint-model-c.jpg" alt="Card image cap">
             <div class="card-body">

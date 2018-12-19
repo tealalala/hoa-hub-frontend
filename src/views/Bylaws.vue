@@ -3,7 +3,7 @@
     <div class="container">
       <h1>Bylaws Index</h1>
 
-      <div v-for="bylaw in bylaws">
+      <div v-for="bylaw in filtered_bylaws_is_true">
         <p>section: {{ bylaw.section }}</p>
         <p>description: {{ bylaw.door }}</p>
         <p>status: {{ bylaw.status }}</p>
@@ -25,14 +25,14 @@ import axios from 'axios'
 export default {
   data: function() {
     return {
-      bylaws: {},
+      filtered_bylaws_is_true: {},
       errors: []
     };
   },
   created: function() {
-    axios.get('http://localhost:3000/api/bylaws').then(function(response) {
+    axios.get('http://localhost:3000/api/filtered_bylaws_is_true').then(function(response) {
       console.log(response.data);
-      this.bylaws = response.data;
+      this.filtered_bylaws_is_true = response.data;
     }.bind(this))
   },
   methods: {},

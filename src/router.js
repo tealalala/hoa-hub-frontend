@@ -29,6 +29,8 @@ import ReportCard from "./views/ReportCard.vue";
 import SellingYourHome from "./views/SellingYourHome.vue";
 import UserProfile from "./views/Profile.vue";
 import ViolationsIndex from "./views/Violations-Index.vue";
+import VotesBylaws from "./views/Votes-Bylaws.vue";
+import VotesCCRs from "./views/Votes-CCRs.vue";
 import VotesIndex from "./views/Votes-Index.vue";
 
 
@@ -55,6 +57,8 @@ export default new Router({
     { path: "/selling-your-home", name: "sellingYourHome", component: SellingYourHome },
     { path: "/profile", name: "userProfile", component: UserProfile },
     { path: "/violations-index", name: "violationsIndex", component: ViolationsIndex },
-    { path: "/votes-index", name: "votesIndex", component: VotesIndex },
+    { path: "/votes-bylaws", name: "votesBylaws", component: VotesBylaws },
+    { path: "/votes-ccrs", name: "votesCCRs", component: VotesCCRs },
+    { path: "/votes-index", name: "votesIndex", component: VotesIndex }
   ]
 })

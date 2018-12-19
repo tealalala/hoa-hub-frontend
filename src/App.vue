@@ -42,7 +42,13 @@
                 <a class="dropdown-item" href="/#/violations-index">Violations
                   <span class="new badge">2</span>
                 </a>
-                <a class="dropdown-item" href="/#/votes-index">Vote on Proposed Bylaws & CCRS
+                <!-- <a class="dropdown-item" href="/#/votes-index">Vote on Proposed Index
+                  <span class="new badge">10</span>
+                </a> -->
+                <a class="dropdown-item" href="/#/votes-bylaws">Vote on Proposed Bylaws
+                  <span class="new badge">10</span>
+                </a>
+                <a class="dropdown-item" href="/#/votes-ccrs">Vote on Proposed CCRs
                   <span class="new badge">10</span>
                 </a>
                 <div class="dropdown-divider"></div>

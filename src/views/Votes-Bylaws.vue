@@ -1,48 +1,18 @@
 <template>
-  <div class="votesIndex">
+  <div class="votesBylaws">
     <div class="container">
-      <h1>Vote on Proposed Bylaws & CCRS</h1>
+      <h1>Vote on Proposed Bylaws</h1>
 
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col">
-            <div class="card" style="width: 100%;">
-              <div class="card-body">
-                <h5 class="card-title">Bylaws</h5>
-                <h6 class="card-subtitle mb-2 text-muted">The Association's Governing Rules</h6>
-                <p class="card-text">
-                  <ul class="list-inline">
-                    <li>determines how the association is run</li>
-                    <li>board of directors are elected members who follow the association's bylaws</li>
-                    <li>governs how often meetings are held, conducted, board offices, membership voting rights</li>
-                    <li>new bylaws may be proposed by the Board of Directors</li>
-                  </ul>
-                </p>
-                <a href="/#/bylaws" class="card-link">View the Bylaws</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 100%;">
-              <div class="card-body">
-                <h5 class="card-title">CC&Rs</h5>
-                <h6 class="card-subtitle mb-2 text-muted">The Community's Standards</h6>
-                <p class="card-text">
-                  <ul class="list-inline">
-                    <li>stands for Covenants, Conditions, and Restrictions</li>
-                    <li>a legal document that lays out the guidelines for the planned community</li>
-                    <li>are recorded in the county records and legally binding</li>
-                    <li>govern what homeowners can, can't or must do with respect to your home</li>
-                  </ul>
-                </p>
-                <a href="/#/ccrs" class="card-link">View the CC&Rs</a>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="alert alert-secondary" role="alert">
+        <h6>Bylaws - The Association's Governing Rules</h6>
+        <ul class="list-inline">
+          <li>determines how the association is run</li>
+          <li>board of directors are elected members who follow the association's bylaws</li>
+          <li>governs how often meetings are held, conducted, board offices, membership voting rights</li>
+          <li>new bylaws may be proposed by the Board of Directors</li>
+        </ul>
+        <a href="/#/bylaws">View the approved Bylaws</a>
       </div>
-
-
 
       <table width="100%" border=1 cellpadding=10 cellspacing=10>
         <thead bgcolor=#eee>
@@ -75,8 +45,8 @@
             <td>{{ action.section }}</td>
             <td>{{ action.description }}</td>
             <td>{{ action.date_proposed }}</td>
-            <td><a href="#" class="btn btn-danger" v-on:click="voteUp(action)">Vote in Favor</a></td>
-            <td><a href="#" class="btn btn-danger" v-on:click="voteDown(action)">Vote Against</a></td>
+            <td><a href="#" class="btn btn-danger" data-toggle="modal" data-target="#resolveViolationModal" v-on:click="voteUp(action)">Vote in Favor</a></td>
+            <td><a href="#" class="btn btn-danger" data-toggle="modal" data-target="#resolveViolationModal" v-on:click="voteDown(action)" v-if="">Vote Against</a></td>
           </tr>
         </tbody>
       </table>
@@ -155,7 +125,7 @@ export default {
           console.log('catch function');
           console.log(error);
           console.log(error.response);
-          // this.errors s= error.response.data.errors;
+          // this.errors = error.response.data.errors;
         })
         window.location.reload();
         console.log("voteUp completed");
@@ -189,7 +159,7 @@ export default {
           console.log('catch function');
           console.log(errors.response);
           this.errors = errors.response.data.errors;
-        });
+        })
         window.location.reload();
         console.log("voteDown completed");
     },

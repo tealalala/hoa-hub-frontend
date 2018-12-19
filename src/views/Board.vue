@@ -9,7 +9,7 @@
         </div>
 
         <!-- <div class="row">
-          <div class="col-sm-4">
+          <div class="col-sm">
             <div class="card" style="width: 18rem;" v-for="boardPerson in filtered_board_is_true">
               <img class="card-img-top" src="" alt="Card image cap">
               <div class="card-body">
@@ -22,7 +22,7 @@
         </div> -->
 
         <!-- <div class="row">
-          <div class="col-sm-4" v-for="boardPerson in filtered_board_is_true">
+          <div class="col-sm" v-for="boardPerson in filtered_board_is_true">
             <div class="card" style="width: 18rem;">
               <img class="card-img-top" src="" alt="Card image cap">
               <div class="card-body">
@@ -38,7 +38,7 @@
         </div> -->
 
         <div class="row">
-          <div class="col-sm-4">
+          <div class="col-sm">
             <div class="card" style="width: 18rem;">
               <img class="card-img-top" src="../assets/images/elsie.jpg" alt="Card image cap">
               <div class="card-body">
@@ -48,7 +48,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm">
             <div class="card" style="width: 18rem;">
               <img class="card-img-top" src="../assets/images/shelli-klein.jpg" alt="Card image cap">
               <div class="card-body">
@@ -58,7 +58,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm">
             <div class="card" style="width: 18rem;">
               <img class="card-img-top" src="../assets/images/tilda-boyer.jpg" alt="Card image cap">
               <div class="card-body">
@@ -68,7 +68,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm">
             <div class="card" style="width: 18rem;">
               <img class="card-img-top" src="../assets/images/angel-ritchie.jpg" alt="Card image cap">
               <div class="card-body">
