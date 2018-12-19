@@ -1,16 +1,48 @@
 <template>
   <div class="ccrsIndex">
     <div class="container">
-      <h1>CCRS Index</h1>
+      <h1>Covenants, Conditions, and Restrictions (CC&Rs)</h1>
+      <h5>Townsend Maple Homeowners Association</h5>
 
-      <div v-for="ccr in filtered_ccrs_is_true">
+      <!-- <div v-for="ccr in filtered_ccrs_is_true">
         <p>section: {{ ccr.section }}</p>
         <p>description: {{ ccr.door }}</p>
         <p>status: {{ ccr.status }}</p>
         <p>date_approved: {{ ccr.date_approved }}</p>
         <p>association_management_id: {{ ccr.association_management_id }}</p>
         <hr>
-      </div>
+      </div> -->
+
+      <table width="100%" border=1 cellpadding=10 cellspacing=10>
+        <thead bgcolor=#eee>
+          <th width="5%" scope="col" style="text-align: left; width: 10rem;">
+            ID
+          </th>
+          <th width="5%" scope="col" style="text-align: left; width: 10rem;">
+            Status
+          </th>
+          <th width="5%" scope="col" style="text-align: left; width: 10rem;">
+            Section
+          </th>
+          <th width="55%" scope="col" style="text-align: left; width: 10rem;">
+            Description
+          </th>
+          <th width="10%" scope="col" style="text-align: left; width: 10rem;">
+            Date Approved
+          </th>
+        </thead>
+        <tbody>
+          <tr v-for="action in filtered_ccrs_is_true">
+            <td>{{ action.id }}</td>
+            <td>{{ action.status }}</td>
+            <td>{{ action.section }}</td>
+            <td>{{ action.description }}</td>
+            <td>{{ action.date_approved }}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p></p>
 
     </div>
   </div>

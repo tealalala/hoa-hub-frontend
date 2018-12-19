@@ -10,7 +10,7 @@
 }
 
 .list-inline{display:block;}
-.list-inline li{display:inline-block;}
+.list-inline li{display:block;}
 .list-inline li:before{content:'•'; margin:0 20px;}
 
 body {
