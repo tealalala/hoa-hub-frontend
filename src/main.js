@@ -2,7 +2,6 @@ import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
 import axios from "axios";
-import SortedTablePlugin from "vue-sorted-table";
 
 
 // Login JWT
@@ -16,16 +15,9 @@ Vue.config.productionTip = false
 // Vuejs App Render
 new Vue({
   router,
-  render: h => h(App),
-  watch: {
-    '$route': function() {
-      window.location.reload();
-    }
-  }
+  render: h => h(App)
 }).$mount('#app')
 
-// Vue-sortable-table plug-in
-Vue.use(SortedTablePlugin);
 
 // Smooth Scroll
 jQuery(document).ready(function( $ ) {

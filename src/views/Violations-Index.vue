@@ -72,11 +72,8 @@ table {
 
 <script>
 import axios from 'axios';
-import Vue2Filters from 'vue2-filters';
-import SortedTablePlugin from "vue-sorted-table";
 
 export default {
-  mixins: [Vue2Filters.mixin],
   data: function() {
     return {
       filtered_violations_is_true: [],

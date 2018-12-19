@@ -3,7 +3,7 @@
     <div class="container">
       <h1>Bylaws Index</h1>
 
-      <div v-for="bylaw in filterBy(bylaws, true, 'status')">
+      <div v-for="bylaw in bylaws">
         <p>section: {{ bylaw.section }}</p>
         <p>description: {{ bylaw.door }}</p>
         <p>status: {{ bylaw.status }}</p>
@@ -21,10 +21,8 @@
 
 <script>
 import axios from 'axios'
-import Vue2Filters from 'vue2-filters'
 
 export default {
-  mixins: [Vue2Filters.mixin],
   data: function() {
     return {
       bylaws: {},
