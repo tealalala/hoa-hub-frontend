@@ -16,7 +16,12 @@ Vue.config.productionTip = false
 // Vuejs App Render
 new Vue({
   router,
-  render: h => h(App)
+  render: h => h(App),
+  watch: {
+    '$route': function() {
+      window.location.reload();
+    }
+  }
 }).$mount('#app')
 
 // Vue-sortable-table plug-in
